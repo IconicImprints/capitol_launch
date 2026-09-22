@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0 1cm 0;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-gray-600);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.active {
+  background-color: var(--color-capitol-gold);
+  transform: scale(1.2);
+}

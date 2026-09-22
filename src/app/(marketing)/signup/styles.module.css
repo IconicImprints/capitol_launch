@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.leftColumn {
+  flex: 1;
+  /* intentionally empty */
+}
+
+.rightColumn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--color-surface);
+}
+
+/* SignupForm styles */
+.form {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-family: var(--font-pixel);
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-foreground);
+}
+
+.subtext {
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--color-foreground);
+  opacity: 0.8;
+}
+
+.primaryButton {
+  background-color: var(--color-capitol-gold);
+  color: var(--color-surface);
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primaryButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--color-foreground);
+  opacity: 0.6;
+  margin: 1rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--color-foreground);
+  margin: 0 0.5rem;
+}
+
+.loginPrompt {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--color-foreground);
+}
+
+.loginLink {
+  color: var(--color-capitol-gold);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.successMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
